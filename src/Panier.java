@@ -18,6 +18,7 @@ public class Panier {
         for(Produit produit : produits){
             if(produit != null){
                 produit.afficher();
+                System.out.println("\n");
             }
         }
     }

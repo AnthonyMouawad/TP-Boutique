@@ -30,8 +30,10 @@ public class Produit {
     }
 
     public Produit(){
-
+        //Constructeur par defaut
     }
+
+    // Constructeur avec parametres
     public Produit(int prix,String nom , String description){
         this.prix = prix;
         this.nom = nom;
@@ -41,11 +43,9 @@ public class Produit {
 
 
     public void afficher(){
-        System.out.println("Produit{" +
-                "nom='" + nom + '\'' +
-                ", description='" + description + '\'' +
-                ", prix=" + prix +
-                '}');
+        System.out.println("nom= " + nom + "\n" +
+                "description= " + description + "\n" +
+                "prix= " + prix + " €" );
     }
 
 }

@@ -11,17 +11,18 @@ public class ProduitAlimentaire extends Produit{
         this.dateExpiration = dateExpiration;
     }
 
+    public ProduitAlimentaire(){
+        //Constructeur par defaut
+    }
+
     public ProduitAlimentaire(int prix, String nom, String description, LocalDate dateExpiration) {
         super(prix , nom, description);
         this.dateExpiration = dateExpiration;
     }
 
     public void afficher(){
-        System.out.println("ProduitAlimentaire{" +
-                "nom='" + getNom() + '\'' +
-                ", description='" + getDescription() + '\'' +
-                ", dateExpiration=" + dateExpiration +
-                ", prix=" + getPrix() +
-                '}');
+        System.out.println("ProduitAlimentaire : ");
+        super.afficher();
+        System.out.println("dateExpiration=" + dateExpiration );
     }
 }

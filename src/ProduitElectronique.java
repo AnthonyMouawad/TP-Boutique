@@ -11,23 +11,19 @@ public class ProduitElectronique extends Produit{
         this.dureeGarantie = dureeGarantie;
     }
 
+    public ProduitElectronique(){
+        //Constructeur par defaut
+    }
+
     public ProduitElectronique(int prix, String nom, String description, int dureeGarantie) {
         super(prix,nom, description);
         this.dureeGarantie = dureeGarantie;
     }
 
     public void afficher(){
-//        System.out.println("ProduitElectronique{" +
-//                "nom='" + getNom() + '\'' +
-//                ", description='" + getDescription() + '\'' +
-//                ", dureeGarantie=" + dureeGarantie +
-//                '}');
-           System.out.println("ProduitElectronique{" +
-                    "nom='" + getNom() + '\'' +
-                    ", description='" + getDescription() + '\'' +
-                    ", dureeGarantie=" + dureeGarantie +
-                    ", prix=" + getPrix() +
-                    '}');
+        System.out.println("ProduitElectronique : ");
+        super.afficher();
+        System.out.println("dureeGarantie=" + dureeGarantie + " mois");
 
     }
 }
