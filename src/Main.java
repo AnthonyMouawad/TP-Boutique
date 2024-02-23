@@ -3,6 +3,7 @@ import java.time.LocalDate;
 public class Main {
     public static void main(String[] args) {
         Boutique boutique = new Boutique();
+        System.out.println("Bienvenue dans la boutique");
 //        Produit produit = new Produit("mais" , "boite");
 //        Produit produit1 = new Produit("ketchup" , "sauce");
 //        Produit produit2 = new Produit("courgette" , "legume");
