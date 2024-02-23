@@ -64,9 +64,9 @@ public class Main {
         // Affichage panier avec les produits alimentaires, electroniques et boissons
         Panier panier = new Panier();
         System.out.println("Voici votre panier : " + "\n");
-        ProduitAlimentaire produitAlimentaire = new ProduitAlimentaire(20,"mais" , "boite" , LocalDate.of(2022, 12, 12));
-        ProduitElectronique produitElectronique = new ProduitElectronique(30,"telephone" , "iphone" , 2);
-        ProduitBoisson produitBoisson = new ProduitBoisson(50,"miranda" , "boisson gazeuse" , 30);
+        ProduitAlimentaire produitAlimentaire = new ProduitAlimentaire(20, "mais" , "boite", LocalDate.of(2022, 12, 12));
+        ProduitElectronique produitElectronique = new ProduitElectronique(30, "telephone" , "iphone", 2);
+        ProduitBoisson produitBoisson = new ProduitBoisson(50, "miranda", "boisson gazeuse", 30);
 
         //Ajout des produits au panier
         panier.ajouterProduit(produitAlimentaire);
